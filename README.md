@@ -1,12 +1,15 @@
---Proyecto: Base de Datos Ventas_Tech_DB
+# RetailPro — Análisis de Datos y Consultas SQL
 
---Descripción
-Este repositorio contiene el script SQL para la creación y carga inicial de la base de datos Ventas_Tech_DB. Modelo diseñado para gestionar el inventario y las ventas de una distribuidora de tecnología.
+Repositorio oficial del proyecto **RetailPro**.
 
---Contenido del Script
-1. Sección DDL: Creación de esquemas, llaves primarias (PK) y llaves foráneas (FK).
-2. Sección DML: Carga de datos iniciales.
-3. Validaciones: Consultas "SELECT" para verificar la integridad.
+## 📂 Estructura del Repositorio
+
+```text
+RetailPro/
+├── README.md                  # Documentación principal del proyecto
+├── Ventas_Tech_DB.sql         # Script DDL y DML (Creación de tablas, relaciones e inserciones) (Módulo 3)
+└── m4_consultas_negocio.sql   # Consultas SQL de negocio y métricas clave (Módulo 4)
+```
 
 --Autor
 Paula Sierra - 2026
