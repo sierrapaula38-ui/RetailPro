@@ -26,7 +26,7 @@ id_cliente INT PRIMARY KEY NOT NULL,
 nombre VARCHAR(100) NOT NULL,
 email VARCHAR(100) unique,
 ciudad VARCHAR(50),
-fecha_registro DATE NOT NULL,
+fecha_registro DATE NOT NULL
 );
 
 -- 3. Productos (Depende de Categorías)
@@ -47,7 +47,7 @@ id_cliente INT,
 id_producto INT,
 cantidad INT NOT NULL,
 precio_unitario DECIMAL(10,2) NOT NULL,
-fecha_venta DATE NOT NULL
+fecha_venta DATE NOT NULL,
 FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
 FOREIGN KEY (id_producto) REFERENCES productos(id_producto)
 );
