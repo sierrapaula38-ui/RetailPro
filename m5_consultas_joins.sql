@@ -12,11 +12,11 @@
 SELECT 
 v.fecha_venta AS fecha,
 c.nombre AS nombre_cliente, 
-    -- segmento: retail vs mayorista
-  CASE
+-- segmento derivado en base a cantidades: retail vs mayorista
+CASE
     WHEN v.cantidad >= 4 THEN 'Mayorista'
     ELSE 'Retail'
-  END AS segmento,
+END AS segmento,
 -- region derivada de ciudad 
 CASE
     WHEN c.ciudad IN ('Buenos Aires','Rosario','Córdoba') THEN 'Centro'
@@ -29,7 +29,7 @@ cat.nombre_categoria AS categoria,
 v.cantidad,
 v.precio_unitario,
 (v.cantidad * v.precio_unitario) AS total_venta,
-  -- canal derivado 
+-- canal derivado 
 CASE
     WHEN v.precio_unitario >= 120 THEN 'Online'
     ELSE 'Presencial'
