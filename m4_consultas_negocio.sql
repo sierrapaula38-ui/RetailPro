@@ -9,7 +9,7 @@
 --Total facturado, cantidad de pedidos y ticket promedio, agrupados por mes. 
 
 SELECT 
-MONTH (fecha_venta) AS mes,
+MONTH (fecha_venta) AS mes,   -- SQL Server (T-SQL) no soporta la función estándar EXTRACT: reemplazo Reemplaza EXTRACT(MONTH FROM fecha_venta) por MONTH(fecha_venta)
 SUM (precio_unitario * cantidad) as total_facturado,
 COUNT (id_venta) as cantidad_pedidos,
 AVG(precio_unitario * cantidad) as ticket_promedio
