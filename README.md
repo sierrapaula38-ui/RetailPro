@@ -2,13 +2,14 @@
 
 Repositorio oficial del proyecto **RetailPro**.
 
-##  Estructura del Repositorio
+## Estructura del Repositorio
 
 ```text
 RetailPro/
-├── README.md                  # Documentación principal del proyecto
-├── Ventas_Tech_DB.sql         # Script DDL y DML (Creación de tablas, relaciones e inserciones) (Módulo 3)
-└── m4_consultas_negocio.sql   # Consultas SQL de negocio y métricas clave (Módulo 4)
+├── README.md                   # Documentación principal del proyecto
+├── Ventas_Tech_DB.sql          # Script DDL y DML (Creación de tablas, relaciones e inserciones) (Módulo 3)[cite: 2]
+├── m4_consultas_negocio.sql    # Consultas SQL de negocio y métricas clave (Módulo 4)[cite: 1]
+└── m5_consultas_joins.sql      # Consultas con JOINs, operadores relacionales y uniones (Módulo 5)
 ```
 
 ## Descripción de Archivos
@@ -34,6 +35,17 @@ Ranking de productos: Top 5 de artículos más vendidos por facturación y volum
 Clientes recurrentes: Identificación de compradores con más de un pedido registrado.
 
 Performance mensual: Análisis comparativo de los meses respecto al promedio general de ventas.
+
+3. m5_consultas_joins.sql (Módulo 5)
+Enfocado en el cruce de tablas y la integración relacional para alimentar tableros en Power BI y realizar auditorías de negocio:
+
+Vista base (INNER JOIN): Cruce integral de ventas, clientes, productos y categorías incorporando dimensiones derivadas (segmento, región y canal mediante expresiones condicionales).
+
+Clientes sin ventas (LEFT JOIN): Auditoría para identificar registros de clientes inactivos mediante la cláusula WHERE ... IS NULL.
+
+Productos sin ventas (LEFT JOIN): Aislamiento de artículos del catálogo sin ventas registradas.
+
+Consolidado por canal (UNION ALL): Integración estructurada de operaciones diferenciadas por canal con agregación final mediante GROUP BY.
 ```
 
 --Autor
