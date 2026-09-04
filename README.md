@@ -12,7 +12,7 @@ RetailPro/
 ├── m5_consultas_joins.sql              # Consultas con JOINs y operadores relacionales (Módulo 5)
 ├── Modulo 6/                           # Carpeta de entregable del Pipeline ETL
 │   └── Pipeline_ETL_Sierra_Paula.pbix  # Pipeline ETL y limpieza de datos en Power Query
-└── Modulo 8/                           # Carpeta de pre-entrega de IA y modelado avanzado
+└── Modulo 8/                           # Carpeta de pre-entrega de modelado avanzado
     ├── Sierra_Paula_Checkpoint2.pbix   # Modelo en estrella, tabla calendario y medidas DAX
   ```
 
